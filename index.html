@@ -36,9 +36,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 20px;
             flex-wrap: wrap;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 
         .logo img {
@@ -165,6 +165,25 @@
             margin: 0 auto;
         }
 
+        /* Videos */
+        .video-container {
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+        
         /* Footer */
         .footer {
             margin-top: 80px;
@@ -248,8 +267,7 @@
             <p class="subtitle">Open platform for the negotiation of zoning changes</p>
             
             <div class="credits">
-                <p>Harvard GSD 2019 Spring Option Studio:<br>
-                Designing Atmospheres and Technologies for Social Interaction<br>
+                <p>Harvard GSD 2019 Spring Option Studio: Designing Atmospheres and Technologies for Social Interaction<br>
                 Instructor: Jose Luis Vallejo</p>
                 <p>Keting Zhou | MAUD 20'<br>
                     Jose Carlos Fernandez | MUP 19'</p>
@@ -286,7 +304,7 @@
             <h2>1. INTRODUCTION:</h2>
             <h3>The affordable housing crisis in Boston and the location of our case study</h3>
             <div class="image-container">
-                <img src="./images/gis.png" alt="Introduction - Boston Housing Crisis">
+                <img src="./images/gis.jpg" alt="Introduction - Boston Housing Crisis">
             </div>
         </section>
 
@@ -318,6 +336,15 @@
             <div class="image-container">
                 <img src="./images/projection.png" alt="Prototype">
             </div>
+            
+            <h3>Real-time Simulation of impact on local traffic under different development scenarios.</h3>
+            
+            <div class="video-container">
+                <video 
+                muted 
+                controls 
+                <source src="videos/Prototype.mp4" type="video/mp4">
+                </video>
         </section>
 
         <!-- Section 4: Platform Design -->
@@ -325,13 +352,21 @@
             <h2>4. PLATFORM DESIGN:</h2>
             
             <h3>Matrix of stakeholders and values to achieve with the platform</h3>
-            <div class="image-container">
-                <img src="./images/algorithmic_calculation.png" alt="Stakeholder Matrix">
+            <div class="video-container">
+                <video 
+                muted 
+                controls 
+                <source src="videos/conflicts.mp4" type="video/mp4">
+                </video>
             </div>
             
-            <h3>Screenshots of the digital platform for visualization and zoning negotiation.</h3>
-            <div class="image-container">
-                <img src="./images/interface.png" alt="Platform Screenshots">
+            <h3>User Interface of the digital platform for zoning negotiation.</h3>
+            <div class="video-container">
+                <video 
+                muted 
+                controls 
+                <source src="videos/UI.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
 
