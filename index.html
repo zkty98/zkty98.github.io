@@ -29,7 +29,8 @@
         .header {
             text-align: center;
             padding: 50px 0;
-            margin-bottom: 10px;
+            padding-bottom: 30px 0;
+            margin-bottom: 0px;
         }
 
         .header-content {
@@ -38,7 +39,7 @@
             align-items: center;
             gap: 20px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
 
         .logo img {
@@ -248,6 +249,11 @@
             .content-section {
                 margin: 50px 0;
             }
+        }
+            /* 隐藏视频音量控制 */
+        video::-webkit-media-controls-volume-slider,
+        video::-webkit-media-controls-mute-button {
+            display: none;
         }
     </style>
 </head>
