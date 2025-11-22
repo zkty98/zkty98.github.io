@@ -250,10 +250,28 @@
                 margin: 50px 0;
             }
         }
-            /* 隐藏视频音量控制 */
-        video::-webkit-media-controls-volume-slider,
-        video::-webkit-media-controls-mute-button {
-            display: none;
+            /* Hearing Analysis 左右布局 - 重点修改 */
+        .hearing-layout {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin: 30px 0;
+        }
+
+        .hearing-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hearing-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hearing-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
@@ -318,31 +336,24 @@
         <!-- Section 2: Hearing Analysis -->
         <section class="content-section">
             <h2>2. HEARING ANALYSIS:</h2>
-
-            <div class="header-content">
-                
-                <div class="image-container">
-                    <img src="./images/hearing.png" alt="Hearing Analysis">
-                </div>
-                
-                <div class="bullet-list">
-                <li>The lawyer as protagonist of the public hearing.</li>
-                <li>Boston zoning as a easy to change regulation.</li>
-                <li>The lack of discussion of all the issues raised by the neighbors</li>
-                <li>The courthouse type of setting of the hearing.</li>
-                </div>
-            </div>
-                            
-
-                <div class="bullet-list">
-                <li>The lawyer as protagonist of the public hearing.</li>
-                <li>Boston zoning as a easy to change regulation.</li>
-                <li>The lack of discussion of all the issues raised by the neighbors</li>
-                <li>The courthouse type of setting of the hearing.</li>
-                </div>
-                
-            </div>
             
+            <div class="hearing-layout">
+                <div class="hearing-image">
+                    <img src="images/hearing.png" alt="Hearing Analysis">
+                </div>
+                
+                <div class="hearing-text">
+                    <ul class="bullet-list">
+                        <li>The lawyer as protagonist of the public hearing.</li>
+                        <li>Boston zoning as a easy to change regulation.</li>
+                        <li>The lack of discussion of all the issues raised by the neighbors</li>
+                        <li>The courthouse type of setting of the hearing.</li>
+                    </ul>
+                    <p class="section-number">02</p>
+                </div>
+                
+                
+            </div>
         </section>
 
         <!-- Section 3: Prototype -->
