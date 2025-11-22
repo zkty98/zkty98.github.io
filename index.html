@@ -256,6 +256,7 @@
             gap: 40px;
             align-items: flex-start;
             margin: 30px 0;
+            align-items: stretch;  /* 让子元素自动拉伸到相同高度 */
         }
 
         .hearing-text {
@@ -293,6 +294,8 @@
             width: 100%;
             height: auto;
             display: block;
+            height: auto;
+            object-fit: contain;  /* 完整显示图片 */
         }
     </style>
 </head>
@@ -380,12 +383,7 @@
         <!-- Section 3: Prototype -->
         <section class="content-section">
             <h2>3. PROTOTYPE:</h2>
-            
-            <h3>Different zoning envelopes according to levels of density</h3>
-            <h3>Physical model of the case study</h3>
-            <h3>Projection of an estimation of the traffic and pedestrian movement.</h3>
-            <h3>Reproduction of the idea to the whole city.</h3>
-            
+                        
             <div class="image-container">
                 <img src="./images/projection.png" alt="Prototype">
             </div>
