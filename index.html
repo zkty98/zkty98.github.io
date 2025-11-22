@@ -259,12 +259,33 @@
         }
 
         .hearing-text {
-            flex: 1;
-            min-width: 300px;
+            flex: 35;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  /* 垂直均匀分布 */
+            height: 100%;  /* 填满整个高度 */
+        }
+
+        .hearing-text .bullet-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  /* 列表项均匀分布 */
+            height: 100%;  /* 填满父容器 */
+            flex-grow: 1;  /* 让列表占据所有可用空间 */
+            margin: 0;
+        }
+
+        .hearing-text .bullet-list li {
+            margin: 0;  /* 移除原有间距 */
+            padding-left: 20px;
+            position: relative;
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            line-height: 1.8;
         }
 
         .hearing-image {
-            flex: 1;
+            flex: 65;
             min-width: 300px;
         }
 
@@ -349,7 +370,7 @@
                         <li>The lack of discussion of all the issues raised by the neighbors</li>
                         <li>The courthouse type of setting of the hearing.</li>
                     </ul>
-                    <p class="section-number">02</p>
+                    
                 </div>
                 
                 
